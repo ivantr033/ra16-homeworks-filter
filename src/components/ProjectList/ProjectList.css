@@ -1,0 +1,34 @@
+.projects-grid {
+    column-count: 3;
+
+    column-gap: 15px;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    /* CRITICAL: Prevents a card from breaking in half between two columns */
+    break-inside: avoid;
+
+    margin-bottom: 15px;
+
+    /* border: 1px solid #e0e0e0; */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    display: block;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Optional: Responsive adjustment for phones (single column on small screens) */
+@media (max-width: 600px) {
+    .projects-grid {
+        column-count: 1;
+    }
+}
